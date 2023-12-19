@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./assets/src/style.css" />
+  </head>
+  <body>
+    <div class="score-container">
+      <div class="logo">
+        <p>Rock</p>
+        <p>Paper</p>
+        <p>Scissors</p>
+      </div>
+      <div class="score">
+        <div class="machine-score">
+          <p>Computer <br> Score</p>
+          <span id="machine-score">0</span>
+        </div>
+        <div class="my-score">
+          <p>Your <br> Score</p>
+          <span id="my-score">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="info">
+        <p class="user">YOU PICKED</p>
+        <p class="machine">PC PICKED</p>
+      </div>
+
+      <div class="options">
+        <img src="./assets/images/bg-triangle.png" class="triangle"/>
+        
+        <!-- user  -->
+        <div class="rock icon-container-user">
+          <div class="item">
+            <img src="./assets/images/fist.png" />
+          </div>
+        </div>
+
+        <div class="paper icon-container-user">
+          <div class="item">
+            <img src="./assets/images/hand-paper.png" />
+          </div>
+        </div>
+
+        <div class="scissors icon-container-user">
+          <div class="item">
+            <img src="./assets/images/scissors.png" />
+          </div>
+        </div>
+
+        <!-- computer  -->
+        <div class="rock icon-container-machine">
+          <div class="item">
+            <img src="./assets/images/fist.png" />
+          </div>
+        </div>
+
+        <div class="paper icon-container-machine">
+          <div class="item">
+            <img src="./assets/images/hand-paper.png" />
+          </div>
+        </div> 
+
+        <div class="scissors icon-container-machine">
+          <div class="item">
+            <img src="./assets/images/scissors.png" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Game rules  -->
+      <div class="div-rule">
+        <dialog class="my-dialog">
+          <div class="rules">
+            <button id="rule-close-btn" class="rule-close-btn">X</button>
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+          </div>
+        </dialog>
+
+        <button class="btn-rule" id="btn-rule">Rules</button>
+      </div>
+
+      <!-- Winning Modal  -->
+      <div class="winner-modal">
+        <h2 class="win-msg">You Won!</h2>
+        <h4 class="win-msg_2">against PC</h4>
+        <button class="play-again">Play Again</button>
+        <button class="nxt-btn" onclick="location.href = 'hurrah.html' ">Next</button>
+
+        <div class="div-rule">
+          <dialog class="my-dialog">
+            <div class="rules">
+              <button id="rule-close-btn" class="rule-close-btn">X</button>
+              <h2>Game Rules</h2>
+              <ul>
+                  <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                  <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                  <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                  <li>If both players lay down the same hand, each player lays down another hand</li>
+              </ul>
+            </div>
+          </dialog>
+  
+          <button class="btn-rule" id="btn-rule">Rules</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./assets/src/script.js"></script>
+  </body>
+</html>

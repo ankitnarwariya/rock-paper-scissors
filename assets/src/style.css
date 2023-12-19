@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #8CC461;
+    font-family: sans-serif;
+}
+
+.score-container{
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 25vh;
+    color: #fff;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+
+.score {
+    display: flex;
+}
+
+.my-score, .machine-score{
+    font-weight: 600;
+    text-align: center;
+    color: #666;
+    height: 90%;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-score span, .machine-score span{
+    font-size: 3.5rem;
+    color: #000;
+}
+
+.game-container{
+    width: 100%;
+    max-width: 700px;
+    min-height: 65vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+
+}
+.info{
+    width: 100%;
+    min-height: 10vh;
+    margin: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info .user, .info .machine{
+    visibility: hidden;
+}
+
+.options{
+    width: 700px;
+    min-height: 49vh;
+    margin-top: 1.5rem;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+.icon-container-user{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-container-machine{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: none;
+}
+
+.rock{
+    border: 0.7rem solid #BD00FF;
+    left: 9rem;
+    top: -10%;
+}
+
+.paper{
+    border: 0.7rem solid #FFA943;
+    left: 18rem;
+    top: 60%;
+}
+
+.scissors{
+    border: 0.7rem solid #0074B6;
+    right: 9rem;
+    top: -10%;
+}
+
+.show-user{
+    left: 7rem;
+    top: -10%;
+}
+
+.show-machine{
+    left: 29.3rem;
+    top: -10%;
+}
+
+.item{
+    background: #fff;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+    width: 60%;
+}
+
+.div-rule{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.btn-rule{
+    padding: 0.4em 1em;
+    background: #8CC461;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.my-dialog {
+    width: 300px;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    transform: translate(-51%, -95%);
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    background: #004429;
+    padding: 1rem 1.5rem;
+  }
+
+  .my-dialog li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.my-dialog li::before{
+    content: "\25AA";
+    color: #FFA943;
+    font-size: 1.5rem;
+    display: inline-block; 
+    width: 0.5em;
+    margin-left: -0.5em;
+}
+
+.my-dialog .rules{
+    position: relative;
+    color: #fff;
+}
+  
+.my-dialog .rule-close-btn {
+    position: absolute;
+    right: -3rem;
+    top: -3rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: red;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.winner-modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    top: 0;
+    display: none;
+}
+
+.win-msg, .play-again{
+    z-index: 1;
+}
+
+.win-msg{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 5rem;
+}
+.win-msg_2{
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.play-again, .nxt-btn{
+    padding: 0.5rem;
+    margin: 0.6rem 0;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nxt-btn{
+    visibility: hidden;
+}
+
+.hurrah-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hurrah-container img{
+    margin: 3rem 0 2rem 0;
+}
+
+.hurrah-container button{
+    margin: 3rem 0 2rem 0;
+}
